@@ -1,5 +1,10 @@
 /* start global for all the site */
-
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
 .red-line:before{
   content:'';
   position: absolute;
@@ -39,6 +44,33 @@
  color:#cccccc;
  font-weight:400;
 }
+@media(max-width:500px){
+ .all-site .small-news img{
+   margin-bottom:0;
+  }
+  .all-site .small-news p{
+    width: 110px;
+   margin-left: 0;
+   font-size: 12px;
+  }
+   .small-news img{
+    margin-bottom:0;
+   }
+   .small-news p{
+    margin-left: 0;
+    font-size: 12px;
+   }
+   .footer .pro-footer form input{
+     width:170px;
+   }
+   .footer .pro-footer form button{
+     width:40px;
+   }
+   .bottom-bar p span{
+     margin-left: 5px;
+     font-size: 12px;
+   }
+}
 @media(max-width:991px){
   .all-site .small-news img{
    margin-bottom:0;
@@ -48,7 +80,6 @@
    font-size: 12px;
   }
 }
-
 .big-news img{
  margin:30px 0;
 }
